@@ -1,4 +1,4 @@
-<h1>Análisis de ventas de un ecommerce</h1>
+<h1>Análisis de ventas de un E-commerce</h1>
 
 > [!NOTE]
 > Este es un proyecto que pretende analizar datos oficiales de un comercio de moda con el objetivo de impulsar las ganancias y el negocio. <br>
