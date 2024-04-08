@@ -51,9 +51,17 @@ Un resumen de éste proceso:
 
 <h2>EDA: Análisis exploratorio de los datos</h2>
 
-<h3>Estadística Descriptiva</h3>
-
 <p>A partir del pre-procesamiento inicial, hemos obtenido perspectivas preliminares de los datos.</p>
+
+<h3>Relaciones entre los datos</h3>
+<p>A través de éste análisis nuestro objetivo fué el comprender qué datos teníamos y cómo se relacionan entre ellos para entender el alcance de la información que podíamos llegar a generar. </p>
+
+![Captura de pantalla de 2024-04-07 21-16-32](https://github.com/pabloing93/store-sales-analysis/assets/32267303/8ff26311-b218-4e7f-bfd2-064625cc60f1)
+
+<p>Además, detectamos información redundante y no escencial de la cual prescindimos para simplificar el proceso de EDA.</p>
+
+![Captura de pantalla de 2024-04-07 21-18-11](https://github.com/pabloing93/store-sales-analysis/assets/32267303/a5ac39b5-74d9-44f7-abbf-8894301b4868)
+
 
 
 <h2>Conclusión</h2>
