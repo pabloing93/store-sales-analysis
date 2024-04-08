@@ -25,10 +25,16 @@
 > [!IMPORTANT] 
 > Se requiere importar las siguientes tecnologías librerías para poder trabajar con el proyecto
 > ```
+> import geobr
 > import pandas
 > import numpy
-> import matplotlib.pyplot
+> import matplotlib
 > import seaborn
+> import tabulate
+> import requests
+> from io import BytesIO
+> from sqlalchemy import create_engine, MetaData, Table, inspect, text
+> global df_items_pedidos, df_pedidos, df_productos, df_vendedores, database
 > ```
 
 <h2>Pre-procesamiento de los datos</h2>
@@ -37,18 +43,17 @@
 
 <h3>Preprocesamiento general</h3>
 
-Después de convertir todo a un DataFrame tuvimos que hacer un pre-procesamiento general que consistió en:
-1. Eliminar columnas o variables que no aportaban información
-2. Eliminar duplicados
-3. Inputación de valores nulos
+Un resumen de éste proceso:
+1. Tratamiento de nulos y duplicados.
+2. Eliminamos la columna SKU (df_productos). No aportaba información para nuestro análisis.
+5. Análisis y tratamiento de los tipos de datos de las columnas.
 
 
 <h2>EDA: Análisis exploratorio de los datos</h2>
 
 <h3>Estadística Descriptiva</h3>
 
-<p>A partir de nuestro análisis exploratorio inicial, hemos obtenido perspectivas preliminares de los datos.</p>
+<p>A partir del pre-procesamiento inicial, hemos obtenido perspectivas preliminares de los datos.</p>
 
-<h2>Feature Engineering</h2>
 
 <h2>Conclusión</h2>
