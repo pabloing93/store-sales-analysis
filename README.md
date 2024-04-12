@@ -65,3 +65,12 @@ Un resumen de éste proceso:
 
 
 <h2>Conclusión</h2>
+
+<p>Como podemos observar en las imagenes, eliminamos las redundancias encontradas, se elimino la columna producto_id de la tabla df_pedidos y ahora la tabla no se encuentra conectada con la tabla df_productos. En segundo lugar se elimino de la tabla df_pedidos la columna total, ya que esta la podemos encontrar con el nombre de valor_total en la tabla df_items_pedidos, y de esta ultima tabla eliminamos la columna id_recibo, ya que esta información no guarda realación con ninguna otra tabla dentro de la BD.</p>
+
+<p>En cuanto la información obtenida a través del EDA, podemos destacar lo siguiente:</p>
+
+1.<p> Se encontro que existe una venta de un producto por el valor de U$D780 que corresponde al vendedor 'Unknown'. Por motivos de información relacionada a las ganancias y ventas optamos por no eliminar el vendedor 'Unknown'. Se asume que podría ser un vendedor que ya no existe o se olvidó registrar su nombre y se procedio a explicar la situación al cliente para que decidiera qué medidas tomar y se concluyo que no era de vital importancia esta información, por tanto se elimino el registro que hace referencia a este vendedor con el fin de realizar análisis posteriores sin preocuparnos por esta información.</p>
+<img src=![image](https://github.com/pabloing93/store-sales-analysis/assets/146877817/a35e6890-38b5-456b-af5c-8893df91c3f7) width="400"/> <img src= ![image](https://github.com/pabloing93/store-sales-analysis/assets/146877817/0b019b6b-cac5-4d8d-bc3e-f581fbec822f) width="400"/>
+
+2.<p></p>
