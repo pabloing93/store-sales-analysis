@@ -83,10 +83,10 @@ Un resumen de éste proceso:
 
 ![Total](https://github.com/pabloing93/store-sales-analysis/assets/146877817/80c967d6-e1dc-4942-ae59-128e8c081193)
 
-      <p>Tambien podemos observar que tecnicamente hablando existen outliers en las columnas valor unitario y costo_envio, pero esto va acorde con la información que se maneja en este tipo de negocios, donde si observamos existen productos o prendas de ropa con valores hasta por encima de  6000 Reales brasileños lo cual es normal, tendiendo que hablamos de marcas de ropa, y los costos de envios es normal que a sean igual de altos ya que hablamos que muchas veces estos están relacionado o van acorde al valor total de la prenda, al tener compras de más de 10k-40k de Reales Brasileños es normal ver costos de envios elevados </p>
+  * <p>Tambien podemos observar que tecnicamente hablando existen outliers en las columnas valor unitario y costo_envio, pero esto va acorde con la información que se maneja en este tipo de negocios, donde si observamos existen productos o prendas de ropa con valores hasta por encima de  6000 Reales brasileños lo cual es normal, tendiendo que hablamos de marcas de ropa, y los costos de envios es normal que a sean igual de altos ya que hablamos que muchas veces estos están relacionado o van acorde al valor total de la prenda, al tener compras de más de 10k-40k de Reales Brasileños es normal ver costos de envios elevados </p>
 
-      ![valor_unitario](https://github.com/pabloing93/store-sales-analysis/assets/146877817/9e556716-134c-417a-abfa-1cdc641f8490)
-      ![costo_envio](https://github.com/pabloing93/store-sales-analysis/assets/146877817/f72a89cd-b238-4e64-b043-750a1b0d1036)
+    ![valor_unitario](https://github.com/pabloing93/store-sales-analysis/assets/146877817/9e556716-134c-417a-abfa-1cdc641f8490)
+    ![costo_envio](https://github.com/pabloing93/store-sales-analysis/assets/146877817/f72a89cd-b238-4e64-b043-750a1b0d1036)
 
 
 3. <p>Dentro del resto de información no encontramos valores insuales, todos los productos estaban bien identificados, no habían valores en blanco. Dentro de los productos hay 3 caegorías los son usados que representan la mayoría, los que están nuevos pero con etiquetas y por ultimo los que están nuevos pero sin etiquetas</p>
