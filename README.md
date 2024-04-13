@@ -44,9 +44,16 @@
 <h3>Preprocesamiento general</h3>
 
 Un resumen de éste proceso:
-1. Tratamiento de nulos y duplicados.
-2. Eliminamos la columna SKU (df_productos). No aportaba información para nuestro análisis.
-5. Análisis y tratamiento de los tipos de datos de las columnas.
+1. Eliminamos la columna "sku"
+2. Eliminamos los registros que no tengan un vendedor o producto conocido, a pedido de nuestro cliente que indico que no desea ningun dato de tipo desconocido
+3. Cambiamos los tipos de datos de algunas columnas
+4. Eliminamos duplicados
+
+<p> Para el dataframe_vendedores se encontro que existe una venta de un producto por el valor de U$D780 que corresponde al vendedor 'Unknown'. Por motivos de información relacionada a las ganancias y ventas optamos por no eliminar el vendedor 'Unknown'. Se asume que podría ser un vendedor que ya no existe o se olvidó registrar su nombre y se procedio a explicar la situación al cliente para que decidiera qué medidas tomar y se concluyo que no era de vital importancia esta información, por tanto se elimino el registro que hace referencia a este vendedor con el fin de realizar análisis posteriores sin preocuparnos por esta información.</p>
+
+![registros de vendedores](https://github.com/pabloing93/store-sales-analysis/assets/146877817/3a9e591b-e310-4b42-bafa-509df56526ba)
+
+![registros del vendedor unknown](https://github.com/pabloing93/store-sales-analysis/assets/146877817/4b31a2d1-07e2-4e1d-ac04-52d86bbf7381)
 
 
 <h2>EDA: Análisis exploratorio de los datos</h2>
@@ -70,14 +77,8 @@ Un resumen de éste proceso:
 
 <p>En cuanto la información obtenida a través del EDA podemos destacar lo siguiente:</p>
 
-1. <p> Para el dataframe_vendedores se encontro que existe una venta de un producto por el valor de U$D780 que corresponde al vendedor 'Unknown'. Por motivos de información relacionada a las ganancias y ventas optamos por no eliminar el vendedor 'Unknown'. Se asume que podría ser un vendedor que ya no existe o se olvidó registrar su nombre y se procedio a explicar la situación al cliente para que decidiera qué medidas tomar y se concluyo que no era de vital importancia esta información, por tanto se elimino el registro que hace referencia a este vendedor con el fin de realizar análisis posteriores sin preocuparnos por esta información.</p>
 
-![registros de vendedores](https://github.com/pabloing93/store-sales-analysis/assets/146877817/3a9e591b-e310-4b42-bafa-509df56526ba)
-
-![registros del vendedor unknown](https://github.com/pabloing93/store-sales-analysis/assets/146877817/4b31a2d1-07e2-4e1d-ac04-52d86bbf7381)
-
-
-2. <p>Se encontro en columna total de df_pedidos, la cual hace referencia a la misma columna valor_total en la df_items_pedidos que tenemos outliers dentro de nuestros datos, pero cuando analizamos de cerca la situación nos encontramos que no son outliers hablando estrictamente desde el punto de vista tecnico y estádistico, ya que esta por fuera de los valores normales, sin embargo el caso de estaduio es sobre venta de ropa, donde existen disferentes tipos de marcas, de las cuales algunas son muy costosos, por lo cual no es raro observar que se registraran ventas por montos tan grandes, en las siguientes imagenes podemos observar ambas gráficas boxplot de ambas columnas donde observamos que son iguales.</p>
+1. <p>Se encontro en columna total de df_pedidos, la cual hace referencia a la misma columna valor_total en la df_items_pedidos que tenemos outliers dentro de nuestros datos, pero cuando analizamos de cerca la situación nos encontramos que no son outliers hablando estrictamente desde el punto de vista tecnico y estádistico, ya que esta por fuera de los valores normales, sin embargo el caso de estaduio es sobre venta de ropa, donde existen disferentes tipos de marcas, de las cuales algunas son muy costosos, por lo cual no es raro observar que se registraran ventas por montos tan grandes, en las siguientes imagenes podemos observar ambas gráficas boxplot de ambas columnas donde observamos que son iguales.</p>
 
 ![Valor_total](https://github.com/pabloing93/store-sales-analysis/assets/146877817/d036db56-a070-4b3d-90ec-7700a7e49d97)
 
@@ -89,7 +90,7 @@ Un resumen de éste proceso:
     ![costo_envio](https://github.com/pabloing93/store-sales-analysis/assets/146877817/f72a89cd-b238-4e64-b043-750a1b0d1036)
 
 
-3. <p>Dentro del resto de información no encontramos valores insuales, todos los productos estaban bien identificados, no habían valores en blanco. Dentro de los productos hay 3 caegorías los son usados que representan la mayoría, los que están nuevos pero con etiquetas y por ultimo los que están nuevos pero sin etiquetas</p>
+2. <p>Dentro del resto de información no encontramos valores insuales, todos los productos estaban bien identificados, no habían valores en blanco. Dentro de los productos hay 3 caegorías los son usados que representan la mayoría, los que están nuevos pero con etiquetas y por ultimo los que están nuevos pero sin etiquetas</p>
 
 ![Condición productos](https://github.com/pabloing93/store-sales-analysis/assets/146877817/81ef54f4-079d-4377-8b16-e8e6cd83aba9)
 
