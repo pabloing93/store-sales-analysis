@@ -93,7 +93,25 @@ Un resumen de éste proceso:
 
 ![Condición productos](https://github.com/pabloing93/store-sales-analysis/assets/146877817/81ef54f4-079d-4377-8b16-e8e6cd83aba9)
 
+<h2>INSIGHTS</h2>
 
+<h3>Pregunta 1: ¿Cual es el Top 5 productos más vendidos históricamente?</h3>
+
+![Top 5 productos más vendidos históricamente](https://github.com/pabloing93/store-sales-analysis/assets/146877817/f85ecbc6-9a5c-46ec-b6da-dd9adc022767)
+
+<h4>Conclusión</h4>
+
+<p>Históricamente, el producto más vendido es la Saia Midi Cinto, que es una falda que incluye un cinturón, con 549 ventas. A pesar de ser el producto más vendido, el producto Vestido Nude Reta, es el que consiguió mayores ingresos con $301,000 </p>
+
+<h3>Pregunta 2: ¿Cual es la evolución histórica de las ingresos netos?</h3>
+
+![Evolución histórica de los ingresos netos](https://github.com/pabloing93/store-sales-analysis/assets/146877817/ddd0896b-e600-4524-983c-ade45df4cb8c)
+
+<h4>Conclusión</h4>
+
+<p>El análisis de los ingresos netos históricos muestra un valor promedio de $80 mil de ingresos netos diarios desde el 2020.
+
+También podemos visualizar un histórico que el día 24 Nov del 2019, se reportó un ingreso neto de $289mil generado por la venta de algunas marcas famosas.</p>
 
 
 
