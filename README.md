@@ -9,9 +9,8 @@
 <h2>Problema del negocio</h2>
 
 <table><tr><td> 
-  Una tienda online de moda, con presencia en todo Brasil, necesita impulsar su rendimiento utilizando sus datos de manera estratégica. <br>
-  Como científico de datos, hemos sido convocados para analizar sus datos para generar información y ofrecer insights que guíen sus decisiones y respondan al   
-  contexto en el que se encuentran. <br><br>
+  <p align="justify">Una tienda online de moda, con presencia en todo Brasil, necesita impulsar su rendimiento utilizando sus datos de manera estratégica. </p><br>
+  <p align="justify">Como científico de datos, hemos sido convocados para analizar sus datos para generar información y ofrecer insights que guíen sus decisiones y respondan al contexto en el que se encuentran. <br><br>
 </td></tr></table>
 
 <h2>Stack de tecnologías</h2>
@@ -39,7 +38,7 @@
 
 <h2>Pre-procesamiento de los datos</h2>
 
-Éste es el proceso más laborioso cuando obtenemos raw data y es el mas importante ya que a partir de datos legibles podemos continuar con el proyecto:
+<p align="justify">Éste es el proceso más laborioso cuando obtenemos raw data y es el mas importante ya que a partir de datos legibles podemos continuar con el proyecto:</p>
 
 <h3>Preprocesamiento general</h3>
 
@@ -49,7 +48,7 @@ Un resumen de éste proceso:
 3. Cambiamos los tipos de datos de algunas columnas
 4. Eliminamos duplicados
 
-<p> Para el dataframe_vendedores se encontro que existe una venta de un producto por el valor de U$D780 que corresponde al vendedor 'Unknown'. Por motivos de información relacionada a las ganancias y ventas optamos por no eliminar el vendedor 'Unknown'. Se asume que podría ser un vendedor que ya no existe o se olvidó registrar su nombre y se procedio a explicar la situación al cliente para que decidiera qué medidas tomar y se concluyo que no era de vital importancia esta información, por tanto se elimino el registro que hace referencia a este vendedor con el fin de realizar análisis posteriores sin preocuparnos por esta información.</p>
+<p align="justify">Para el dataframe_vendedores se encontro que existe una venta de un producto por el valor de U$D780 que corresponde al vendedor 'Unknown'. Por motivos de información relacionada a las ganancias y ventas optamos por no eliminar el vendedor 'Unknown'. Se asume que podría ser un vendedor que ya no existe o se olvidó registrar su nombre y se procedio a explicar la situación al cliente para que decidiera qué medidas tomar y se concluyo que no era de vital importancia esta información, por tanto se elimino el registro que hace referencia a este vendedor con el fin de realizar análisis posteriores sin preocuparnos por esta información.</p>
 
 ![registros de vendedores](https://github.com/pabloing93/store-sales-analysis/assets/146877817/3a9e591b-e310-4b42-bafa-509df56526ba)
 
@@ -114,6 +113,22 @@ Un resumen de éste proceso:
 
 <p align="justify">También podemos visualizar un histórico que el día 24 Nov del 2019, se reportó un ingreso neto de $289mil generado por la venta de algunas marcas famosas.</p>
 
+<h3>Pregunta 3: ¿Cuáles son los ingresos netos por vendedor por año?</h3>
 
+![Ingresos Netos por vendedor y año](https://github.com/pabloing93/store-sales-analysis/assets/146877817/d340c915-2a02-4b59-ae9a-e96cd9078a68)
+
+<h4>Conclusión</h4>
+
+<p align="justify">Podemos destacar a los vendedores Daniel y Ana, quienes aumentaron considerablemente sus ingresos netos hasta $5M en el 2020. Mientras que los vendedores Nadia y Millena, crecieron también hasta $4M en el 2020, el vendedor Paulo muestra una tendencia a la baja que debe ser acompañada de cerca.</p>
+
+<h3>Pregunta 4: ¿Cuáles son las ciudades que proporcionan mayores ingresos netos?</h3>
+
+![Ingresos netos por ciudad en Brasil](https://github.com/pabloing93/store-sales-analysis/assets/146877817/406a7924-392a-4a1a-b09d-5c3b481b0462)
+
+<h4>Conclusión</h4>
+
+<p align="justify"> Alagoas y  Pernambuco son las 2 ciudades con mayores ingresos con R$ 1.5 M respectivamente.</p>
+
+<p align="justify"> Sin embargo, la ciudades de Mato Grosso do sul con R$ 1.2 M y Acre con R$ 1.15 M son las 2 ciudades que menores ventas realizaron</p>
 
 
